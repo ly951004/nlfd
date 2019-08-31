@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定位导航</title>
+    <style>
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .div1{
+        width: 800px;
+        height: 700px;
+        border: 2px solid #fff;
+        background: #ccc;
+        margin: 50px auto;
+    }
+    .div2{
+        width: 600px;
+        height: 150px;
+        background: #fff;
+        margin: 50px 100px 15px 100px;
+        position: relative;
+    }
+    li{
+        width: 100px;
+        height: 40px;
+        border-bottom: 3px solid pink;
+        float: left;
+        position: relative;
+    }
+    a{
+        line-height: 40px;
+        text-align: center;
+        color: pink;
+        display: block;
+    }
+    ul{
+        width: 510px;
+        height: 42px;
+        position: absolute;
+        left: 45px;
+        top: 55px;
+    }
+    a:hover{
+       background:red;
+       color: #fff;
+    }
+    span{
+      position: absolute;
+      right: 0;
+       bottom: 0;
+       opacity: 0.5;
+    }
+    .ul li{
+        width: 100px;
+        height: 40px;
+        border: 1px solid pink;
+        float: left;
+        position: relative;
+    }
+   .ul a:hover{
+       border-top:3px solid pink;
+       border-bottom: none;
+       background: #fff;
+       color: pink;
+   }
+   .ul1 li{
+       border-bottom: 2px solid pink;
+   }
+   .ul1 a:hover{
+      border-top:2px solid pink;
+      border-right: 2px solid pink;
+      border-left:  2px solid pink;
+      background: #fff;
+      color: #000;
+   }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <ul >
+                <li style="background:red; "><a href="">妙味 <span>|</span></a></li>
+                <li ><a href="">欢迎你<span>|</span></a></li>
+                <li ><a href="">妙味课堂<span>|</span></a></li>
+                <li><a href="">欢迎大家<span>|</span></a></li>
+                <li><a href="">miaov</a></li>
+            </ul>
+        </div>
+        <div class="div2">
+                        <ul class="ul">
+                            <li ><a href="">妙味 </a></li>
+                            <li class="li"><a href="" class="a">欢迎你</a></li>
+                            <li class="li"><a href=""  class="a">妙味课堂</a></li>
+                            <li class="li"><a href=""  class="a">欢迎大家</a></li>
+                            <li class="li"><a href=""  class="a">miaov</a></li>
+                        </ul>
+        </div>
+        <div class="div2">
+                <ul class="ul1">
+                    <li ><a href="">妙味 </a></li>
+                    <li class="li"><a href="" class="a">欢迎你</a></li>
+                    <li class="li"><a href=""  class="a">妙味课堂</a></li>
+                    <li class="li"><a href=""  class="a">欢迎大家</a></li>
+                    <li class="li"><a href=""  class="a">miaov</a></li>
+                </ul>
+</div>
+    </div>
+</body>
+</html>

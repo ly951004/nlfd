@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格</title>
+    <style>
+    th,td{
+        padding: 0;
+    }
+    td{
+        height: 25px;
+    
+    }
+    div{
+        width: 800px;
+        height: 300px;
+        border: 1px solid #ccc;
+        margin: 200px auto;
+        background: #ccc;
+    }
+    table{
+        border-collapse: collapse;
+        margin: 88.5px   100px;
+        background: #fff;
+        width: 600px;
+    }
+    td{
+        text-align: center;
+    }
+    img{
+        margin-top: 3px;
+    }
+    th{
+        background: rgb(205, 232, 248);
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <table border="1">
+        <tr>
+            <th colspan="2">日期</th>
+            <th colspan="2">天气现象</th>
+            <th>气温</th>
+            <th>风向</th>
+            <th>阻力</th>
+        </tr>
+        <tr>
+                <td rowspan="2">22日星期五</td>
+                <td>白天</td>
+                <td><img src="img/k18_1.png" alt=""></td>
+                <td>阴转多云</td>
+                <td><span style="color: orange">高温 40度</span></td>
+                <td>无持续风向</td>
+                <td>微风</td>
+            </tr>
+            <tr>
+                    <td>夜间</td>
+                    <td><img src="img/k18_2.png" alt=""></td>
+                    <td>晴</td>
+                    <td><span style="color:blue">低温-4度</span></td>
+                    <td>无持续风向</td>
+                    <td>微风</td>
+                </tr>
+                <tr>
+                        <td rowspan="2"><span style="color:red;">22日星期五</span></td>
+                        <td>白天</td>
+                        <td><img src="img/k18_3.png" alt=""></td>
+                        <td>晴</td>
+                        <td><span style="color: orange">高温 40度</span></td>
+                        <td>无持续风向</td>
+                        <td>微风</td>
+                    </tr>
+                    <tr>
+                            <td>夜间</td>
+                            <td><img src="img/k18_4.png" alt=""></td>
+                            <td>阴</td>
+                            <td><span style="color:blue">低温-4度</span></td>
+                            <td>无持续风向</td>
+                            <td>微风</td>
+                        </tr>
+    </table>
+</div>
+</body>
+</html>

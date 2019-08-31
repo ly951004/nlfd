@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+    <style>
+        p{
+            margin: 0;
+            font-size: 12px;
+            margin-left: 10px;
+            display: inline;
+            line-height: 34px;
+            opacity: 0.5;
+        }
+    header{
+        width: 400px;
+        height: 500px;
+        border: 1px  solid #ccc;
+        margin: 40px auto;
+    }
+    div{
+        margin: 20px 70px ;
+    }
+    label{
+        color: #ccc;
+    }
+    .input:focus{
+        outline:none;
+        border: 1px solid red;
+    }
+    .div1{
+        width: 184px;
+        height: 34px;
+        background: pink;
+        margin-left: 133px;
+        margin-top: 0;
+    }
+    .div2{
+        width: 260px;
+        height: 36px;
+        margin-bottom: 0;
+    }
+    label{
+        display: block;
+        float: left;
+    }
+    textarea{
+        width: 180px;
+        height: 100px;
+        margin-left: 14px;
+    }
+    .inp{
+        width: 150px;
+        height: 30px;
+        background: pink;
+        border: none;
+    }
+    span{
+        margin-left: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <form action="">
+      <div>
+            <label for="user">用户名：</label>
+            <input type="text" name="" id="user"style="width:180px;height:30px ">
+      
+      </div>
+          <div class="div2">
+                <label for="user1" style="margin-left:15px;">密码：</label>
+                <input type="password" name="" id="user1" style="width:180px;height:30px;" class="input">
+          </div>
+            <div  class="div1">
+            <P> 密码要8—12位数字或字母组合</P>
+              </div>
+            <div style="margin-bottom: 0;">
+                <label for="use" >留言：</label>
+           <textarea name="" id="use" ></textarea>
+        </div>
+            <div>
+                <label for="">性别：</label>
+                <input type="radio" name="sex" id="">男
+                <input type="radio" name="sex" id="" style="margin-left:  30px; color:pink;" > <span>女</span>
+            </div>
+            <div>
+                    <label for="">爱好：</label>
+                    <input type="checkbox" name="" id="">打球
+                    <input type="checkbox" name="" id="">唱歌
+                    <input type="checkbox" name="" id="">睡觉
+            </div>
+            <div style="margin-left: 130px;">
+                <input type="button"  value="提交" name="" id="" class="inp">
+            </div>
+         </form>
+        </header>
+</body>
+</html>

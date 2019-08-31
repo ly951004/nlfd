@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片分层</title>
+    <style>
+         body{
+        background: url("img/beijing.jpg")
+    }
+        p{
+            margin: 0;
+            font-size: 10px;
+            color: #fff;
+            margin-inline-start: 5px;
+            line-height: 20px;
+        }
+    .img{
+        border: 1px solid#fff;
+    }
+    .div2{
+       width: 140px;
+       height: 116px;
+       background: url("img/left.jpg");
+       position: relative;
+       margin: 20px 20px 0 20px ;
+    }
+    .img{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+    .div1{
+        width: 140px;
+        height: 20px;
+        background: black;
+        opacity: 0.5;
+        position: relative;
+        margin: 0 20px 10px 20px;
+    }
+    .img1{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+    .p1{
+        color: black;
+        font-size: 16px;
+        margin:15px 20px 10px 20px;
+        display: inline;
+    }
+    span{
+        color: gray;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    header{
+        width: 180px;
+        height: 240px;
+        background: #fff;
+        float: left;
+        margin: 100px 30px 0 100px;
+        border: 1px solid #ccc;
+    }
+    footer{
+        width: 160px;
+        margin-top: 10px;
+    }
+    .header{
+        width: 240px;
+        height: 240px;
+        background: #fff;
+        float: left;
+        margin-top:  100px ;
+        margin-left: 0;
+    }
+    .div2-2{
+       width: 200px;
+       height: 116px;
+       background: url("img/right.jpg");
+       position: relative;
+       margin: 20px 20px 0 20px ;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="div2">
+            <img src="img/jiahao.jpg" alt="" class="img">
+    </div  >
+    <div class="div1">
+      <p>妙味云课堂</p>
+      <img src="img/H.jpg" alt="" class="img1">
+    </div>
+    <p class="p1">妙味云课堂在线</p>
+    <footer>
+    <img src="img/play.jpg" alt="" style="margin-left: 20px;">
+    <span>627,400</span>
+    <img src="img/message.jpg" alt="" style="margin-left:20px" img>
+    <span>627</span>
+</footer>
+</header>
+<header class="header">
+        <div class="div2-2">
+                <img src="img/jiahao.jpg" alt="" class="img">
+        </div  >
+        <div class="div1" style="width: 200px; background: pink">
+          <p style="color:black;font-weight:bold;">妙味云课堂</p>
+          <img src="img/H.jpg" alt="" class="img1">
+        </div>
+        <p class="p1">妙味云课堂在线</p>
+        <footer>
+        <img src="img/play.jpg" alt="" style="margin-left: 20px;">
+        <span>627,400</span>
+        <img src="img/message.jpg" alt="" style="margin-left:20px" img>
+        <span>627</span>
+    </footer>
+    </header>
+</body>
+</html>
